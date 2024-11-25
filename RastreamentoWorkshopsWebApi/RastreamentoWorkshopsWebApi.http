@@ -1,0 +1,6 @@
+@RastreamentoWorkshopsWebApi_HostAddress = http://localhost:5004
+
+GET {{RastreamentoWorkshopsWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
