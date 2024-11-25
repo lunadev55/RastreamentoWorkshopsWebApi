@@ -1,4 +1,5 @@
 # API Web de Rastreamento de Workshops
+![rastreamento-workshops-web-api](https://github.com/user-attachments/assets/f84f1e24-326f-4dad-989c-ae41ce07a8f7)
 
 ## Descrição
 
