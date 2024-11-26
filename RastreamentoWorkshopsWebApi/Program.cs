@@ -73,6 +73,16 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()  
+              .AllowAnyMethod() 
+              .AllowAnyHeader(); 
+    });
+});
+
 var app = builder.Build();
 
 app.UseAuthentication(); 
@@ -87,7 +97,7 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty; 
     });
 }
-
+app.UseCors();
 app.MapControllers();
 
 app.Run();
